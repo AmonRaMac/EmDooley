@@ -1,0 +1,7 @@
+name: Dooley
+type: theme
+description: 'Simple theme with tailwind for Drupal'
+core_version_requirement: ^11
+base theme: stable9
+libraries:
+  - dooley/tailwind

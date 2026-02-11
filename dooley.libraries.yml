@@ -1,0 +1,5 @@
+tailwind:
+  version: Version
+  css:
+    theme:
+      css/output.css: {}

@@ -1,0 +1,21 @@
+{#
+/**
+ * @file
+ * Theme override for Article nodes.
+ */
+#}
+<article{{ attributes.addClass('mx-auto', 'max-w-6xl', 'px-6', 'py-10') }}>
+  {% if label %}
+    <h1 class="text-5xl font-semibold tracking-tight text-slate-900">{{ label }}</h1>
+  {% endif %}
+
+  {% if content.field_image is defined and content.field_image %}
+    <div class="mt-6">
+      {{ content.field_image }}
+    </div>
+  {% endif %}
+
+  <div class="dooley-article-content mt-6">
+    {{ content|without('field_image') }}
+  </div>
+</article>
